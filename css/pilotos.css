@@ -4,7 +4,7 @@ body {
   background-color: #333;
 }
 
-/* Seccion Header */
+/*header */
 
 .f1-header {
   display: flex;
@@ -51,9 +51,9 @@ body {
 .nav-menu a:hover {
   color: red;
 }
-
+/* asset pilotos */
 .contenedor {
-  max-width: 1000px;
+  max-width: 1100px;
   width: 100%;
   margin: 0 auto;
   padding: 20px;
@@ -134,6 +134,14 @@ body {
   color: #ccc;
   text-align: justify;  
 }
+/* estadisticas */
+.estadisticas-contenedor {
+  display: flex;
+  gap: 20px;
+  justify-content:center;
+  margin-top: 30px;
+  
+}
 
 .estadisticas {
   margin-top: 30px;
@@ -178,4 +186,59 @@ body {
 .estadisticas td span {
   font-weight: bold;
   color: #e10600;
+}
+/* highlights */
+.momentos-destacados {
+  margin-top: 40px;
+  background-color: #1a1a1a;
+  border-left: 4px solid #e10600;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #e1060044;
+}
+
+.momentos-destacados h3 {
+  font-size: 24px;
+  color: #e10600;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 5px;
+}
+
+.momentos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.momento {
+  flex: 1 1 30%;
+  background-color: #2a2a2a;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 3px solid #e10600;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.momento:hover {
+  transform: translateY(-5px);
+  background-color: #333;
+}
+
+.momento h4 {
+  color: #ffffff;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.momento p {
+  font-size: 14px;
+  color: #ccc;
+  line-height: 1.5;
+}
+.momento img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-top: 10px;
 }
