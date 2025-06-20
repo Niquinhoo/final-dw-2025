@@ -103,7 +103,7 @@ body {
   gap: 15px;
 }
 
-.numero {
+.numero-redbull {
   font-size: 36px;
   font-weight: bold;
   color: #e10600;
@@ -241,4 +241,12 @@ body {
   height: auto;
   border-radius: 5px;
   margin-top: 10px;
+}
+/* footer */
+footer {
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
 }
