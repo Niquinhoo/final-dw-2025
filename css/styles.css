@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  background-color: #333;
+  background-color: #15151e;
 }
 
 /* Seccion Header */
@@ -11,7 +11,7 @@ body {
   display: flex;
   align-items: center;
   padding: 10px 20px;
-  background: repeating-linear-gradient(45deg,  #111 0,  #111 20px,  #1a1a1a 20px,  #1a1a1a 40px);
+  background: repeating-linear-gradient(45deg,  #111 0,  #111 20px,  #1a1a1a 20px,  #1a1a1a 40px);  
   color: white;
 }
 
@@ -53,6 +53,85 @@ body {
   color: red;
 }
 
+/* Seccion Menu Podio-Pilotos */
+
+
+/* Colores por posición */
+.primero {
+  background: linear-gradient(135deg, #f58025, #d86900);
+}
+
+.segundo {
+  background: linear-gradient(135deg, #ec7000, #b85200);
+}
+
+.tercero {
+  background: linear-gradient(135deg, #103b86, #001f4d);
+}
+
+
+/* Seccion Siguentes carreras */
+
+.next-race-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000; /* negro fondo */
+  color: white;
+  padding: 10px 20px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 16px;
+  border-bottom: 2px solid #14141d;
+}
+
+.next-race-bar .left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.next-race-bar .label {
+  font-weight: 300;
+  color: #ccc;
+}
+
+.next-race-bar .country {
+  font-weight: bold;
+  color: #fff;
+}
+
+.next-race-bar .date {
+  background-color: #333;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.next-race-bar .right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-align: right;
+}
+
+.logo-tag,
+.logo-fia {
+  height: 30px;
+}
+
+.time-info {
+  line-height: 1.2;
+}
+
+.time-info .dot {
+  color: #00ff88;
+  margin-right: 4px;
+}
+
+.time-info .time {
+  font-weight: bold;
+  margin-left: 4px;
+}
 
 
 /* Seccion Teams */
@@ -76,12 +155,13 @@ body {
 
 .teams-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));  /* sacado de chatgpt*/
   gap: 20px;
   padding: 0 10px;
 }
 
 /* Team Card */
+
 .team {
   border-radius: 10px;
   padding: 20px;
@@ -92,6 +172,7 @@ body {
 }
 
 .team-header {
+  height: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -113,19 +194,271 @@ body {
   width: 100%;
   margin-top: auto;
 }
-
+.car:hover {
+  transform: scale(1.1);
+}
 /* Colores por equipo */
-.mclaren  { background-color: #f58020; }
-.mercedes { background-color: #00c2b3; }
-.ferrari  { background-color: #dc0000; }
-.redbull  { background-color: #1e41ff; }
-.williams { background-color: #005aff; }
-.haas     { background-color: #bfbfbf; color: #000; }
+.mclaren  { background: linear-gradient(135deg, #f58025, #d86900); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); }
+.mercedes { background: linear-gradient(135deg, #76d7c4, #48c9b0); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);}
+.ferrari  { background: linear-gradient(135deg, #a93226, #cb4335); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);}
+.redbull  { background: linear-gradient(135deg, #103b86, #001f4d); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);}
+.williams { background: linear-gradient(135deg, #3498db, #2e86c1); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);}
+.haas     { background: linear-gradient(135deg, #a6acaf, #839192); color: #000; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);}
 
 strong {
   font-weight: bold;
 }
 
 /* Seccion Drivers */
+
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+
+p {
+  color: #ccc;
+}
+
+.drivers-section {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.drivers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));  /* sacado de chatgpt*/
+  gap: 20px;
+  max-width: 1200px;
+  margin: 30px auto 0 auto;
+}
+
+.driver-card {
+  padding: 15px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  text-align: left;
+}
+
+.driver-card h2 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.driver-card p {
+  font-size: 13px;
+  margin-bottom: 5px;
+  color: #000;
+}
+
+.driver-card .number {
+  font-size: 28px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.flag {
+  width: 20px;
+  height: auto;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  border-radius: 2px;
+}
+
+.driver-img {
+  position: absolute;
+  bottom: 0;
+  right: -20px;
+  width: 100px;
+  height: auto;
+}
+
+.driver-img:hover {
+  transform: scale(1.2);
+}
+
+/* Seccion Siguientes Carreras */
+
+.calendar-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.section {
+  text-align: center;
+}
+
+.section h2 {
+  color: white;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.card {
+  width: 300px;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+  display: flex;
+  align-items: end;
+  transition: transform 0.3s ease;
+}
+
+.featured {
+  width: 460px;
+  height: 300px;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.info {
+  background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0));  /*sacado de chatgpt*/
+  padding: 20px;
+  width: 100%;
+}
+
+.info span {
+  font-size: 0.9rem;
+  color: white;
+  text-shadow: 4px 4px 6px black;
+}
+
+.info h3 {
+  font-size: 1.8rem;
+  margin: 5px 0;
+  color: white;
+  text-shadow: 4px 4px 6px black;
+}
+
+.info p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: white;
+  text-shadow: 4px 4px 6px black;
+}
+
+.sponsor {
+  width: 90px;
+  margin-top: 10px;
+}
+
+/* Seccion Siguientes carrers */
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+
+.results-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.race-card {
+  background-color: black;
+  border-radius: 12px;
+  padding: 20px;
+  height: 200px;
+  width: 500px;
+  flex-direction: column;
+}
+.race-card2 {
+  background-color: red;
+  border-radius: 12px;
+  padding: 20px;
+  height: 200px;
+  width: 500px;
+  flex-direction: column;
+  display: flex;
+}
+
+.race-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: #ccc;
+}
+
+h2 {
+  color: white;
+  font-size: 1.6rem;
+}
+
+.flaguer {
+  margin-right: 8px;
+}
+
+.race-title {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.podium {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.podium-item {
+  background-color: white;
+  border-radius: 8px;
+  padding: 10px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.podium-item img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.podium-item .text {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8rem;
+}
+
+.position {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  color: #aaa;
+}
+
+.driver {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.first {
+  background-color: #2a2d3a;
+}
+
+.second {
+  background-color: #2c2f40;
+}
+
+.third {
+  background-color: #2e3145;
+}
+
+
+
+
 
 
