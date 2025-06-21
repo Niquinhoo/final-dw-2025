@@ -102,11 +102,56 @@ body {
   align-items: center;
   gap: 15px;
 }
-
+/* numeroscolorequipo */
 .numero-redbull {
   font-size: 36px;
   font-weight: bold;
   color: #e10600;
+}
+.numero-mclaren {
+  font-size: 36px;
+  font-weight: bold;
+  color: #ff8700;
+}
+.numero-mercedes {
+  font-size: 36px;
+  font-weight: bold;
+  color: #00d2be;
+}
+.numero-ferrari {
+  font-size: 36px;
+  font-weight: bold;
+  color: #dc0000;
+}
+.numero-alpine {
+  font-size: 36px;
+  font-weight: bold;
+  color: #f200ff;
+}
+.numero-aston-martin {
+  font-size: 36px;
+  font-weight: bold;
+  color: #006f62;
+}
+.numero-williams {
+  font-size: 36px;
+  font-weight: bold;
+  color: #005aff;
+}
+.numero-sauber {
+  font-size: 36px;
+  font-weight: bold;
+  color: #04ff00;
+}
+.numero-haas {
+  font-size: 36px;
+  font-weight: bold;
+  color: #ff3838;
+}
+.numero-racing-bulls{
+  font-size: 36px;
+  font-weight: bold;
+  color: #03368d;
 }
 
 .nombre-numero h2 {
