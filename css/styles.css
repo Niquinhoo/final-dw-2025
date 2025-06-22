@@ -354,6 +354,11 @@ p {
   margin-top: 10px;
 }
 
+.driver-card a{
+  text-decoration: none;
+  color: inherit;
+}
+
 /* Seccion Siguientes carrers */
 
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
