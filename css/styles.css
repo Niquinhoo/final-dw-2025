@@ -198,12 +198,16 @@ body {
   transform: scale(1.1);
 }
 /* Colores por equipo */
-.mclaren  { background: linear-gradient(135deg, #f58025, #d86900); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); }
-.mercedes { background: linear-gradient(135deg, #76d7c4, #48c9b0); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);}
-.ferrari  { background: linear-gradient(135deg, #a93226, #cb4335); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);}
-.redbull  { background: linear-gradient(135deg, #103b86, #001f4d); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);}
-.williams { background: linear-gradient(135deg, #3498db, #2e86c1); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);}
-.haas     { background: linear-gradient(135deg, #a6acaf, #839192); color: #000; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);}
+.mclaren  { background: linear-gradient(135deg, #f58025, #d86900); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);  color: white;}
+.mercedes { background: linear-gradient(135deg, #76d7c4, #48c9b0); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); color: white;}
+.ferrari  { background: linear-gradient(135deg, #a93226, #cb4335); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); color: white;}
+.redbull  { background: linear-gradient(135deg, #103b86, #001f4d); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); color: white;}
+.williams { background: linear-gradient(135deg, #3498db, #2e86c1); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); color: white;}
+.haas     { background: linear-gradient(135deg, #a6acaf, #839192); color: #000; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); color: white;}
+.sauber   { background: linear-gradient(135deg, #00ff22, #26ff0083); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); color: white;}
+.rb      { background: linear-gradient(135deg, #3c76f2, #8bb7ff); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); color: white; }
+.astonmartin { background: linear-gradient(135deg, #1e8449, #145a32); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);  color: white;}
+.alpine { background: linear-gradient(135deg, #8e44ad, #6f2c91); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);  color: white;}
 
 strong {
   font-weight: bold;
