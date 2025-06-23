@@ -295,3 +295,100 @@ footer {
   padding: 20px;
   margin-top: 40px;
 }
+
+/*📱*/
+
+@media (max-width: 768px) {
+  .f1-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 0;
+    padding: 10px 0 0 10px;
+  }
+
+  .contenedor {
+    padding: 15px;
+  }
+
+  .tarjeta-piloto {
+    flex-direction: column;
+  }
+
+  .imagen-piloto,
+  .info-piloto {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+
+  .nombre-numero {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .estadisticas-contenedor {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .estadisticas {
+    margin-top: 20px;
+  }
+
+  .momentos-grid {
+    flex-direction: column;
+  }
+
+  .momento {
+    flex: 1 1 100%;
+  }
+
+  footer {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo img {
+    height: 24px;
+  }
+
+  .f1-75 {
+    font-size: 16px;
+  }
+
+  .nombre-numero h2 {
+    font-size: 22px;
+  }
+
+  .descripcion {
+    font-size: 14px;
+  }
+
+  .estadisticas h3,
+  .momentos-destacados h3 {
+    font-size: 20px;
+  }
+
+  .estadisticas table {
+    font-size: 14px;
+  }
+
+  .momento h4 {
+    font-size: 16px;
+  }
+
+  .momento p {
+    font-size: 13px;
+  }
+
+  footer {
+    font-size: 12px;
+  }
+}
