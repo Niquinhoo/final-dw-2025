@@ -52,6 +52,80 @@ body {
 .nav-menu a:hover {
   color: red;
 }
+/* Seccion Noticias de la F1 */
+
+.noticias {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.noticias-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.noticias-header h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+}
+
+.noticias-header a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.noticias-header a:hover {
+  color: red;
+}
+
+.contenedor-noticias {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+  gap: 1rem;
+}
+
+.noticia {
+  display: flex;
+  background-color: #17202a;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.noticia img {
+  width: 40%;
+  object-fit: cover;
+}
+
+.contenido {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contenido a {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: underline;
+  margin-bottom: 0.5rem;
+  transition: color 0.3s;
+}
+
+.contenido a:hover {
+  color: red;
+}
+
+.contenido p {
+  font-size: 0.9rem;
+  color: #ccc;
+}
 
 /* Seccion Menu Podio-Pilotos */
 
@@ -331,24 +405,23 @@ p {
 
 .driver-card h2 {
   margin: 0;
-  font-size: 16px;
 }
 
 .driver-card p {
-  font-size: 13px;
+  font-size: 15px;
   margin-bottom: 5px;
-  color: #000;
+  color: #f2f3f4;
 }
 
 .driver-card .number {
-  font-size: 28px;
+  font-size: 45px;
   font-weight: bold;
   display: block;
   margin-bottom: 10px;
 }
 
 .flag {
-  width: 20px;
+  width: 40px;
   height: auto;
   position: absolute;
   bottom: 10px;
@@ -494,7 +567,7 @@ p {
   display: flex;
   justify-content: space-between;
   font-size: 0.85rem;
-  color: #ccc;
+  color: #f2f3f4;
 }
 
 h2 {
@@ -507,7 +580,7 @@ h2 {
 }
 
 .race-title {
-  color: #888;
+  color: #f2f3f4;
   font-size: 0.9rem;
 }
 
@@ -550,8 +623,11 @@ h2 {
 .driver {
   font-size: 1rem;
   font-weight: bold;
+  color: white;
 }
-
+.text small {
+  color: white;
+}
 .first {
   background-color: #2a2d3a;
 }
