@@ -239,7 +239,10 @@ body {
   font-weight: bold;
   margin-bottom: 30px;
 }
-
+.tabla-responsiva{
+  overflow-x: auto;
+  margin-bottom: 20px;
+}
 .tabla-resultados {
   width: 100%;
   border-collapse: collapse;
