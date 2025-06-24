@@ -325,3 +325,137 @@ body {
   font-size: 12px;
   margin-top: 20px;
 }
+/* 📱 */
+@media screen and (max-width: 768px) {
+
+  .f1-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 0;
+    padding: 10px 0;
+  }
+
+  .noticias-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .noticias-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .contenedor-noticias {
+    grid-template-columns: 1fr;
+  }
+
+  .noticia {
+    flex-direction: column;
+  }
+
+  .noticia img {
+    width: 100%;
+    height: auto;
+  }
+
+  .encabezado {
+    flex-direction: column;
+    margin-inline: 20px;
+    text-align: center;
+  }
+
+  .teams-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .drivers-grid {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .corredores-grid {
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    height: auto;
+  }
+
+  .driver-img, .corredores-img {
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+
+  .calendar-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card, .race-card, .race-card2 {
+    width: 90%;
+    height: auto;
+  }
+
+  .prox, .featured {
+    width: 100%;
+    height: auto;
+  }
+
+  .footer-top, .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .sidebar-icon {
+    font-size: 24px;
+    padding: 8px 16px;
+    top: 5px;
+    right: 10px;
+  }
+
+  .sidebar {
+    width: 200px;
+    padding-top: 50px;
+  }
+
+  .perfil-container {
+    padding: 0 10px;
+  }
+
+  .favoritos {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .favoritos-bloque {
+    flex: 1 1 100%;
+  }
+
+  .grid-favoritos {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .favorito-item {
+    width: 80px;
+  }
+
+  .footer-top {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer-menu {
+    justify-content: center;
+    gap: 10px;
+  }
+}
