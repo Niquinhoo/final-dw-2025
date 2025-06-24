@@ -91,7 +91,7 @@ body {
 
 .noticia {
   display: flex;
-  background-color: #17202a;
+  background-color: #0d0d14;
   border-radius: 12px;
   overflow: hidden;
 }
@@ -656,7 +656,7 @@ h2 {
 }
 
 .footer-logo img {
-  height: 40px;
+  max-width: 100%;
   transform: scale(1);
   transform-origin: center;
   object-fit: contain;
