@@ -375,7 +375,7 @@ body {
 }
 
 .footer-logo img {
-  height: 40.01px;
+  max-width: 100%;
 }
 
 .footer-menu {
