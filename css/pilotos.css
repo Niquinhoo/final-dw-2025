@@ -375,7 +375,10 @@ body {
 }
 
 .footer-logo img {
-  max-width: 100%;
+  height: 40px;
+  transform: scale(1);
+  transform-origin: center;
+  object-fit: contain;
 }
 
 .footer-menu {
@@ -416,6 +419,67 @@ body {
   color: #ccc;
   font-size: 12px;
   margin-top: 20px;
+}
+
+/* Oculta el checkbox */
+.sidebar-checkbox {
+  display: none;
+}
+
+/* Estilo del botón hamburguesa */
+.sidebar-icon {
+  font-size: 26px;
+  color: white;
+  cursor: pointer;
+  padding: 10px 20px;
+  position: fixed;
+  top: 5px;
+  right: 20px; /* antes era left */
+  z-index: 1001;
+
+}
+
+/* Sidebar oculto inicialmente */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -250px; /* oculto por derecha */
+  left: auto;
+  height: 100%;
+  width: 250px;
+  background-color: #111;
+  padding-top: 60px;
+  transition: right 0.3s ease;
+  z-index: 1000;
+}
+
+
+.sidebar nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar nav ul li {
+  padding: 15px 30px;
+  border-bottom: 1px solid #333;
+}
+
+.sidebar nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar nav ul li a:hover {
+  color: #e10600;
+}
+
+/* Sidebar visible cuando el checkbox está checked */
+.sidebar-checkbox:checked ~ .sidebar {
+  right: 0;
+  left: auto;
 }
 
 /* coloresporequipo */

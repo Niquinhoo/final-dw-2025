@@ -1,0 +1,327 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #111;
+  color: #fff;
+}
+/* Seccion Header */
+
+.f1-header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background: repeating-linear-gradient(45deg,  #111 0,  #111 20px,  #1a1a1a 20px,  #1a1a1a 40px);  
+  color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.logo img {
+  height: 30px;
+}
+
+.f1-75 {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  margin-left: 30px;
+  gap: 25px;
+}
+
+.nav-menu li {
+  cursor: pointer;
+  font-size: 14px;
+  transition: color 0.2s;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-menu a:hover {
+  color: red;
+}
+/* Seccion Siguentes carreras */
+
+.next-race-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  color: white;
+  padding: 10px 20px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 16px;
+  border-bottom: 2px solid #14141d;
+}
+
+.next-race-bar .left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.next-race-bar .label {
+  font-weight: 300;
+  color: #ccc;
+}
+
+.next-race-bar .country {
+  font-weight: bold;
+  color: #fff;
+}
+
+.next-race-bar .date {
+  background-color: #333;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.next-race-bar .right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-align: right;
+}
+
+.logo-tag,
+.logo-fia {
+  height: 30px;
+}
+
+.time-info {
+  line-height: 1.2;
+}
+
+.time-info .dot {
+  color: #00ff88;
+  margin-right: 4px;
+}
+
+.time-info .time {
+  font-weight: bold;
+  margin-left: 4px;
+}
+/* Oculta el checkbox */
+.sidebar-checkbox {
+  display: none;
+}
+
+/* Estilo del botón hamburguesa */
+.sidebar-icon {
+  font-size: 26px;
+  color: white;
+  cursor: pointer;
+  padding: 10px 20px;
+  position: fixed;
+  top: 5px;
+  right: 20px; /* antes era left */
+  z-index: 1001;
+
+}
+
+/* Sidebar oculto inicialmente */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -250px; /* oculto por derecha */
+  left: auto;
+  height: 100%;
+  width: 250px;
+  background-color: #111;
+  padding-top: 60px;
+  transition: right 0.3s ease;
+  z-index: 1000;
+}
+
+
+.sidebar nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar nav ul li {
+  padding: 15px 30px;
+  border-bottom: 1px solid #333;
+}
+
+.sidebar nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar nav ul li a:hover {
+  color: #e10600;
+}
+
+/* Sidebar visible cuando el checkbox está checked */
+.sidebar-checkbox:checked ~ .sidebar {
+  right: 0;
+  left: auto;
+}
+
+
+/* Seccion Perfil */
+.perfil-titulo {
+  font-size: 22px;
+  font-weight: 600;
+  color: #005ee1;
+}
+
+.perfil-container {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.perfil-info {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.foto-perfil {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #005ee1;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.bio {
+  font-size: 16px;
+  color: #ccc;
+  max-width: 600px;
+  margin: 10px auto 0 auto;
+}
+
+.favoritos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+.favoritos-bloque {
+  flex: 1 1 300px;
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00a1e144;
+}
+
+.favoritos-bloque h3 {
+  color: #ffffff;
+  font-size: 20px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 5px;
+}
+
+.grid-favoritos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.favorito-item {
+  text-align: center;
+  width: 100px;
+}
+
+.favorito-item img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 5px #000;
+  transition: transform 0.3s;
+}
+
+.favorito-item img:hover {
+  transform: scale(1.05);
+}
+
+.favorito-item span {
+  display: block;
+  margin-top: 8px;
+  font-size: 14px;
+  color: #fff;
+}
+
+/* footer */
+.f1-footer {
+  background-color: #0d0d14;
+  color: #fff;
+  padding: 30px 20px 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.footer-logo img {
+  height: 40px;
+  transform: scale(1);
+  transform-origin: center;
+  object-fit: contain;
+}
+
+.footer-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  flex-direction: column;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  margin: 15px 0;
+
+}
+
+.social-icons a img {
+  height: 30px;
+  margin-right: 10px;
+}
+
+
+.footer-copy {
+  text-align: center;
+  color: #ccc;
+  font-size: 12px;
+  margin-top: 20px;
+}
