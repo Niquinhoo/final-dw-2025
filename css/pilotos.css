@@ -375,7 +375,7 @@ body {
 }
 
 .footer-logo img {
-  height: 40px;
+  max-width: 100%;
   transform: scale(1);
   transform-origin: center;
   object-fit: contain;
