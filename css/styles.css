@@ -879,37 +879,50 @@ h2 {
 
 
 /*📱*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
+  .contenedor {
+    padding: 0 10px;
+  }
 
-  .f1-header {
-    flex-direction: column;
-    align-items: flex-start;
+  .tabla-responsiva {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #0d0d14;
+  }
+
+  .tabla-resultados {
+    min-width: 600px;
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+  }
+
+  .tabla-resultados th, .tabla-resultados td {
     padding: 10px;
+    font-size: 0.8rem;
   }
 
-  .nav-menu ul {
-    flex-direction: column;
-    gap: 10px;
-    margin-left: 0;
-    padding: 10px 0;
-  }
-
+  .next-race-bar,
+  .f1-header,
+  .footer-top,
+  .footer-bottom,
+  .encabezado,
   .noticias-header {
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
   }
 
-  .noticias-header h2 {
-    font-size: 1.8rem;
+  .nav-menu ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 0;
   }
 
   .contenedor-noticias {
     grid-template-columns: 1fr;
-  }
-
-  .noticia {
-    flex-direction: column;
   }
 
   .noticia img {
@@ -917,65 +930,59 @@ h2 {
     height: auto;
   }
 
-  .encabezado {
+  .noticia {
     flex-direction: column;
-    margin-inline: 20px;
-    text-align: center;
   }
 
-  .teams-grid {
+  .teams-grid,
+  .drivers-grid,
+  .calendar-container,
+  .results-grid {
     grid-template-columns: 1fr;
-  }
-
-  .drivers-grid {
-    grid-template-columns: 1fr;
-    height: auto;
-  }
-
-  .corredores-grid {
-    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-    height: auto;
-  }
-
-  .driver-img, .corredores-img {
-    position: static;
-    width: 100%;
-    height: auto;
-  }
-
-  .calendar-container {
     flex-direction: column;
     align-items: center;
   }
 
-  .card, .race-card, .race-card2 {
-    width: 90%;
-    height: auto;
+  .car {
+    max-width: 100%;
   }
 
-  .prox, .featured {
+  .race-card,
+  .race-card2 {
+    width: 100%;
+  }
+
+  .featured,
+  .prox {
     width: 100%;
     height: auto;
   }
 
-  .footer-top, .footer-bottom {
-    flex-direction: column;
-    align-items: center;
+  .driver-img,
+  .corredores-img {
+    display: none;
   }
 
+  .sidebar-icon {
+    right: 15px;
+    top: 10px;
+  }
+
+  .f1-footer {
+    padding: 20px 10px;
+  }
+
+  .footer-menu,
   .social-icons {
     justify-content: center;
   }
 
-  .sidebar-icon {
-    font-size: 24px;
-    padding: 8px 16px;
-    top: 5px;
-    right: 10px;
+  .entrevista,
+  .contenedor-historia {
+    padding: 0 10px;
   }
 
-  .sidebar {
-    width: 200px;
-    padding-top: 50px;
+  .barra-volver {
+    margin-top: 15px;
   }
 }

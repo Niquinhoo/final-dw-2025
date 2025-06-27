@@ -486,3 +486,127 @@ p {
 .boton-volver:hover {
   color: #e10600;
 }
+
+/* 📱 */
+@media screen and (max-width: 480px) {
+  .f1-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .logo img {
+    height: 25px;
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    margin-left: 0;
+    padding-left: 0;
+    gap: 10px;
+  }
+
+  .next-race-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14px;
+  }
+
+  .next-race-bar .right {
+    align-self: flex-end;
+  }
+
+  .sidebar-icon {
+    font-size: 22px;
+    padding: 8px 16px;
+  }
+
+  .sidebar {
+    width: 200px;
+    padding-top: 50px;
+  }
+
+  .equipos-container {
+    padding: 20px 10px;
+  }
+
+  .equipo-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .equipo-logo {
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+  }
+
+  .equipo-nombre {
+    font-size: 28px;
+  }
+
+  .equipo-descripcion {
+    font-size: 15px;
+    text-align: justify;
+  }
+
+  .auto-lateral {
+    margin: 10px auto;
+  }
+
+  .drivers-grid {
+    grid-template-columns: 1fr;
+    height: auto;
+    gap: 15px;
+    padding: 0 10px;
+  }
+
+  .corredores-grid {
+    grid-template-columns: repeat(2, 1fr);
+    height: auto;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .driver-img, .corredores-img {
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+
+  .driver-card {
+    text-align: center;
+  }
+
+  .flag {
+    position: static;
+    display: block;
+    margin: 10px auto;
+  }
+
+  .footer-top,
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-menu {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .barra-volver {
+    padding: 10px;
+  }
+
+  .boton-volver {
+    font-size: 13px;
+  }
+}

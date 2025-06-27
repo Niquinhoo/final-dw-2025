@@ -994,25 +994,45 @@ body {
 
 /*📱*/
 
-@media (max-width: 768px) {
+@media screen and (max-width: 850px) {
+  /* Header */
   .f1-header {
     flex-direction: column;
     align-items: flex-start;
-    padding: 15px;
   }
 
   .nav-menu ul {
     flex-direction: column;
-    gap: 10px;
     margin-left: 0;
-    padding: 10px 0 0 10px;
+    gap: 10px;
+    padding-left: 0;
   }
 
+  /* Barra siguiente carrera */
+  .next-race-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .next-race-bar .left,
+  .next-race-bar .right {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Contenedor general */
   .contenedor {
-    padding: 15px;
+    padding: 10px;
   }
 
-  .tarjeta-piloto {
+  /* Tarjeta piloto */
+  .tarjeta-piloto,
+  .tarjeta-piloto-redbull,
+  .tarjeta-piloto-mclaren,
+  .tarjeta-piloto-mercedes,
+  .tarjeta-piloto-aston-martin,
+  .tarjeta-piloto-alpine {
     flex-direction: column;
   }
 
@@ -1025,66 +1045,96 @@ body {
   .nombre-numero {
     flex-direction: column;
     align-items: flex-start;
-    gap: 5px;
-  }
-
-  .estadisticas-contenedor {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .estadisticas {
-    margin-top: 20px;
-  }
-
-  .momentos-grid {
-    flex-direction: column;
-  }
-
-  .momento {
-    flex: 1 1 100%;
-  }
-
-  footer {
-    padding: 15px;
-  }
-}
-
-@media (max-width: 480px) {
-  .logo img {
-    height: 24px;
-  }
-
-  .f1-75 {
-    font-size: 16px;
   }
 
   .nombre-numero h2 {
     font-size: 22px;
   }
 
+  .numero-redbull,
+  .numero-mclaren,
+  .numero-mercedes,
+  .numero-ferrari,
+  .numero-alpine,
+  .numero-aston-martin,
+  .numero-williams,
+  .numero-sauber,
+  .numero-haas,
+  .numero-racing-bulls {
+    font-size: 28px;
+  }
+
   .descripcion {
     font-size: 14px;
   }
 
+  /* Estadísticas */
+  .estadisticas-contenedor {
+    flex-direction: column;
+  }
+
+  .estadisticas,
+  .estadisticas-redbull,
+  .estadisticas-mclaren,
+  .estadisticas-mercedes,
+  .estadisticas-aston-martin,
+  .estadisticas-alpine {
+    padding: 15px;
+  }
+
   .estadisticas h3,
-  .momentos-destacados h3 {
+  .estadisticas-redbull h3,
+  .estadisticas-mclaren h3,
+  .estadisticas-mercedes h3,
+  .estadisticas-aston-martin h3,
+  .estadisticas-alpine h3 {
     font-size: 20px;
   }
 
-  .estadisticas table {
+  .estadisticas table,
+  .estadisticas th,
+  .estadisticas td {
     font-size: 14px;
   }
 
-  .momento h4 {
-    font-size: 16px;
+  /* Momentos destacados */
+  .momentos-grid {
+    flex-direction: column;
   }
 
-  .momento p {
-    font-size: 13px;
+  .momento,
+  .momento-redbull,
+  .momento-mclaren,
+  .momento-mercedes,
+  .momento-aston-martin,
+  .momento-alpine {
+    flex: 1 1 100%;
   }
 
-  footer {
-    font-size: 12px;
+  /* Sidebar */
+  .sidebar {
+    width: 100%;
+  }
+
+  /* Footer */
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .footer-menu {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .footer-copy {
+    font-size: 11px;
   }
 }
