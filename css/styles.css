@@ -884,17 +884,8 @@ h2 {
     padding: 0 10px;
   }
 
-  .tabla-responsiva {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    width: 100%;
-    border-radius: 10px;
-    background-color: #0d0d14;
-  }
-
   .tabla-resultados {
-    min-width: 600px;
-    width: 100%;
+    width: 220px;
     border-collapse: collapse;
     font-size: 0.85rem;
   }
@@ -913,6 +904,7 @@ h2 {
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
+    width: 100%;
   }
 
   .nav-menu ul {
@@ -934,14 +926,25 @@ h2 {
     flex-direction: column;
   }
 
+  .corredores-grid,
   .teams-grid,
-  .drivers-grid,
-  .calendar-container,
-  .results-grid {
-    grid-template-columns: 1fr;
-    flex-direction: column;
-    align-items: center;
+  .drivers-grid {
+    grid-template-columns: repeat(2, 1fr);
+    height: auto;
+    width: 100%;
+    gap: 10px;
   }
+
+  .driver-img, .corredores-img {
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+
+  .driver-card {
+    text-align: center;
+  }
+
 
   .car {
     max-width: 100%;
@@ -970,12 +973,14 @@ h2 {
 
   .f1-footer {
     padding: 20px 10px;
+    width: 100%;
   }
 
   .footer-menu,
   .social-icons {
     justify-content: center;
   }
+
 
   .entrevista,
   .contenedor-historia {
