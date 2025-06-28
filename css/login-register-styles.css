@@ -117,13 +117,6 @@ footer p {
 
 /* 📱 */
 @media (max-width: 480px) {
-  body {
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    height: auto;
-    padding: 20px 10px;
-  }
 
   .login-container {
     width: 100%;
@@ -150,6 +143,11 @@ footer p {
 
   .logo {
     margin-bottom: 10px;
+  }
+
+  .logo img {
+    width: 100%;
+    height: auto;
   }
 
   footer {
